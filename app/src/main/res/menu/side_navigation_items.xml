@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single" android:id="@+id/functions">
+        <item android:id="@+id/nav_call_to_order"
+            android:title="@string/contact_us"
+            />
+
+        <item android:id="@+id/nav_terms_use"
+            android:title="@string/terms_of_use"
+            />
+
+        <item android:id="@+id/nav_rate"
+            android:title="@string/rate_this_app"
+            />
+
+        <item android:id="@+id/nav_privacy"
+            android:title="@string/privacy_policy"
+            />
+
+    </group>
+
+
+
+</menu>

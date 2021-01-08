@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.eatthalal">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".utils.ZorbiStore"
+        android:allowBackup="true"
+        android:icon="@drawable/company_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.home.todaysSpecial.TodaysSpecialActivity"></activity>
+        <activity android:name=".ui.main.home.ImageActivity"/>
+        <activity android:name=".ui.auth.login.orders.orderDetails.OrderDetailsActivity" />
+        <activity android:name=".ui.auth.login.orders.CustomerOrderActivity" />
+        <activity android:name=".ui.main.home.offers.OffersActivity" />
+        <activity android:name=".ui.main.home.eatHalal.EatHalalActivity" />
+        <activity android:name=".ui.main.home.latestProducts.LatestProductsActivity" />
+        <activity android:name=".ui.main.cart.checkout.CheckOutActivity" />
+        <activity android:name=".ui.auth.login.EditprofileActivity" />
+        <activity
+            android:name=".ui.main.categories.categoriesDetail.CategoriesDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.auth.register.RegisterFinalActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.auth.register.RegisterPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.auth.register.RegisterNameActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
